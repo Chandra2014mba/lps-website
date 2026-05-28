@@ -1,0 +1,26 @@
+# ══════════════════════════════════════════════
+#  LPS Netlify Configuration
+# ══════════════════════════════════════════════
+
+[build]
+  publish = "."
+
+# Security headers applied to every page
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-XSS-Protection = "1; mode=block"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Keep the admin dashboard out of search engines
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+# Enable Netlify Forms spam filtering (honeypot)
+[build.processing]
+  skip_processing = false

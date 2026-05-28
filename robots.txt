@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /images/uploads/
+
+Sitemap: https://loyalprofessionalservices.com/sitemap.xml

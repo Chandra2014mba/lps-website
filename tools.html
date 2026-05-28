@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free GST, Income Tax & EMI Calculators | LPS Bangalore</title>
+<meta name="description" content="Free online GST calculator, income tax calculator FY 2025-26, HRA exemption & EMI calculator by LPS - the best accounting firm in Bangalore.">
+<meta name="geo.region" content="IN-KA">
+<meta name="geo.placename" content="Bangalore">
+<link rel="canonical" href="https://loyalprofessionalservices.com/tools.html">
+<link rel="icon" type="image/png" href="images/logo-transparent.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AccountingService","name":"Loyal Professional Services","alternateName":"LPS Bangalore","description":"Top-rated accounting firm in Bangalore providing professional bookkeeping, GST filing, corporate tax planning, and payroll compliance services.","url":"https://loyalprofessionalservices.com","telephone":"+918686108671","email":"loyalprofessionalservices@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressRegion":"Karnataka","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":"12.9716","longitude":"77.5946"}}
+</script>
+<style>
+:root{--navy:#1A2E5A;--navy2:#0F1F3D;--navy3:#243D6E;--gold:#C8A96E;--gold2:#E2BE82;--offwhite:#F5F5F0;--charcoal:#2C2C2A;--muted:#6B7280;--border:#E5E7EB;--white:#fff;--green:#22C55E;--shadow:0 4px 24px rgba(0,0,0,.08);--shadow-lg:0 12px 48px rgba(0,0,0,.14)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--charcoal);background:var(--white);line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{cursor:pointer;font-family:inherit;border:none}
+input,textarea,select{font-family:inherit;outline:none}
+section{padding:80px 0}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:50px;font-size:14px;font-weight:700;transition:all .25s;border:2px solid transparent;cursor:pointer}
+.btn-gold{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(200,169,110,.35)}
+.btn-navy{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn-navy:hover{background:var(--navy2);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-wa{background:#25D366;color:#fff;border-color:#25D366}
+.btn-wa:hover{background:#1DB954;transform:translateY(-2px)}
+.sec-eyebrow{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:10px}
+.sec-h{font-size:44px;font-weight:800;color:var(--navy);line-height:1.15;margin-bottom:14px;letter-spacing:-.5px}
+.sec-sub{font-size:16px;color:var(--muted);line-height:1.8;max-width:600px}
+.sec-header{margin-bottom:56px}
+.sec-header.center{text-align:center}
+.sec-header.center .sec-sub{margin:0 auto}
+.fade-up{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease}
+.fade-up.visible{opacity:1;transform:none}
+/* HEADER */
+header{position:sticky;top:0;z-index:1000;background:var(--navy);transition:box-shadow .3s}
+header.scrolled{box-shadow:0 2px 24px rgba(0,0,0,.28)}
+.nav-wrap{height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.nav-logo img{width:48px;height:48px;aspect-ratio:1/1;object-fit:contain}
+.nav-logo-name{color:#fff;font-size:15px;font-weight:800;display:block}
+.nav-logo-sub{color:var(--gold);font-size:10px;font-weight:500;display:block;letter-spacing:.6px}
+nav ul{display:flex;align-items:center;gap:24px}
+nav ul a{color:rgba(255,255,255,.72);font-size:13.5px;font-weight:500;transition:color .2s;position:relative;padding:4px 0}
+nav ul a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:var(--gold);transition:width .25s}
+nav ul a:hover,nav ul a.active{color:var(--gold)}
+nav ul a:hover::after,nav ul a.active::after{width:100%}
+.nav-cta{background:var(--gold);color:var(--navy);padding:10px 22px;border-radius:50px;font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px;flex-shrink:0;transition:.25s}
+.nav-cta:hover{background:var(--gold2);transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:6px}
+.hamburger span{width:22px;height:2px;background:#fff;border-radius:2px;transition:.3s}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mobile-menu{display:none;background:var(--navy2);border-top:1px solid rgba(255,255,255,.08)}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;color:rgba(255,255,255,.75);padding:14px 24px;font-size:14px;border-bottom:1px solid rgba(255,255,255,.06)}
+.mobile-menu a:hover{color:var(--gold)}
+/* HERO */
+.hero{background:var(--navy2);min-height:90vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:60px 0}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(200,169,110,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(200,169,110,.03) 1px,transparent 1px);background-size:60px 60px}
+.hero-glow{position:absolute;top:-120px;right:-80px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(200,169,110,.1) 0%,transparent 65%)}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:4rem;align-items:center;position:relative;z-index:2}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(200,169,110,.12);border:1px solid rgba(200,169,110,.3);color:var(--gold2);padding:7px 18px;border-radius:50px;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:22px}
+.hero h1{font-size:50px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:20px;letter-spacing:-1px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero-sub{font-size:17px;color:rgba(255,255,255,.68);line-height:1.85;margin-bottom:36px;max-width:520px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.trust-bar{display:flex;gap:24px;flex-wrap:wrap;padding-top:28px;border-top:1px solid rgba(255,255,255,.1)}
+.trust-item{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,.68);font-size:13px}
+.trust-item strong{color:#fff;font-weight:700}
+.trust-item .dot{color:rgba(255,255,255,.25)}
+.hero-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:32px;backdrop-filter:blur(12px);position:relative}
+.hero-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent);border-radius:24px 24px 0 0}
+.hero-card-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.hero-card-logo{width:56px;height:56px;aspect-ratio:1/1;background:rgba(200,169,110,.15);border:1px solid rgba(200,169,110,.25);border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hero-card-logo img{width:38px;height:38px;aspect-ratio:1/1;object-fit:contain}
+.hero-card-title{color:#fff;font-size:15px;font-weight:700;display:block}
+.hero-card-sub{color:var(--gold);font-size:11px;font-weight:600}
+.hero-card-desc{color:rgba(255,255,255,.55);font-size:13.5px;line-height:1.75;margin-bottom:24px}
+.hero-card-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;border-top:1px solid rgba(255,255,255,.1);padding-top:20px}
+.hcs-num{font-size:28px;font-weight:900;color:var(--gold);display:block;line-height:1}
+.hcs-lbl{font-size:11px;color:rgba(255,255,255,.42);margin-top:3px}
+.hero-founder{display:flex;align-items:center;gap:12px;margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+.hero-founder img{width:44px;height:44px;aspect-ratio:1/1;border-radius:50%;object-fit:cover;object-position:top;border:2px solid var(--gold)}
+.hero-founder-name{color:#fff;font-size:13px;font-weight:700;display:block}
+.hero-founder-role{color:rgba(255,255,255,.45);font-size:11px}
+/* SERVICES */
+.services-section{background:var(--offwhite)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc-card{background:#fff;border-radius:18px;padding:28px;border:1.5px solid var(--border);transition:.3s;position:relative;overflow:hidden}
+.svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transition:transform .3s;transform-origin:left}
+.svc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:rgba(200,169,110,.4)}
+.svc-card:hover::after{transform:scaleX(1)}
+.svc-icon{width:54px;height:54px;background:rgba(26,46,90,.06);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:28px;transition:background .3s}
+.svc-card:hover .svc-icon{background:rgba(200,169,110,.15)}
+.svc-card h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.svc-card p{font-size:13.5px;color:var(--muted);line-height:1.75;margin-bottom:16px}
+.svc-more{font-size:13px;font-weight:700;color:var(--navy);display:inline-flex;align-items:center;gap:4px}
+.svc-card:hover .svc-more{color:var(--gold)}
+/* WHY */
+.why-section{background:#fff}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.why-card{padding:32px 24px;border-radius:18px;border:1.5px solid var(--border);text-align:center;transition:.3s}
+.why-card:hover{border-color:var(--gold);box-shadow:var(--shadow);transform:translateY(-5px)}
+.why-icon{width:64px;height:64px;background:rgba(26,46,90,.06);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:30px}
+.why-card:hover .why-icon{background:rgba(200,169,110,.15)}
+.why-card h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.why-card p{font-size:13.5px;color:var(--muted);line-height:1.7}
+/* INDUSTRIES */
+.industries-section{background:var(--offwhite)}
+.ind-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.ind-card{background:#fff;border-radius:14px;padding:24px 16px;text-align:center;border:1.5px solid var(--border);transition:.3s;cursor:pointer;display:block}
+.ind-card:hover{border-color:var(--gold);box-shadow:var(--shadow);transform:translateY(-4px)}
+.ind-icon{font-size:36px;display:block;margin-bottom:10px}
+.ind-name{font-size:13px;font-weight:700;color:var(--navy);display:block;margin-bottom:5px}
+.ind-link{font-size:10.5px;color:var(--gold);font-weight:700}
+/* STATS */
+.stats-bar{background:var(--navy2);padding:64px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat-item{text-align:center;padding:28px 24px;border-right:1px solid rgba(255,255,255,.07)}
+.stat-item:last-child{border-right:none}
+.stat-num{font-size:52px;font-weight:900;color:var(--gold);display:block;line-height:1}
+.stat-suffix{font-size:28px;vertical-align:super}
+.stat-lbl{font-size:14px;color:rgba(255,255,255,.52);margin-top:8px}
+/* TEAM */
+.team-section{background:#fff}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.team-card{background:#fff;border-radius:18px;overflow:hidden;border:1.5px solid var(--border);transition:.3s;text-align:center}
+.team-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-6px);border-color:rgba(200,169,110,.4)}
+.team-photo{width:100%;height:240px;object-fit:cover;object-position:top;transition:transform .4s}
+.team-card:hover .team-photo{transform:scale(1.04)}
+.team-info{padding:20px 16px}
+.team-name{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:3px}
+.team-role{font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px;display:block}
+.team-exp{font-size:12px;font-weight:600;color:var(--muted);margin-bottom:8px;display:inline-flex;align-items:center;gap:4px}
+.team-exp::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);display:inline-block}
+.team-bio{font-size:12.5px;color:var(--muted);line-height:1.65}
+/* TESTIMONIALS */
+.testi-section{background:var(--offwhite)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testi-card{background:#fff;border-radius:18px;padding:28px;border:1.5px solid var(--border);position:relative;transition:.3s}
+.testi-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px);border-color:rgba(200,169,110,.4)}
+.testi-quote{position:absolute;top:18px;right:22px;font-size:72px;color:var(--gold);opacity:.1;font-family:Georgia,serif;line-height:1}
+.testi-stars{color:var(--gold);font-size:17px;margin-bottom:14px;letter-spacing:2px}
+.testi-text{font-size:14.5px;color:var(--charcoal);line-height:1.85;margin-bottom:24px;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:12px}
+.testi-avatar{width:46px;height:46px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:15px;font-weight:800;flex-shrink:0}
+.testi-name{font-size:14px;font-weight:700;color:var(--navy);display:block}
+.testi-co{font-size:12px;color:var(--muted)}
+/* NEWS */
+.news-section{background:#fff}
+.news-layout{display:grid;grid-template-columns:1fr 300px;gap:2rem}
+.news-featured{background:var(--offwhite);border-radius:18px;overflow:hidden;border:1.5px solid var(--border);margin-bottom:20px;transition:.3s;display:block}
+.news-featured:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+.news-featured img{width:100%;height:220px;object-fit:cover}
+.news-feat-body{padding:20px}
+.news-tag{display:inline-block;font-size:10.5px;font-weight:700;color:#fff;padding:3px 10px;border-radius:20px;margin-bottom:10px}
+.tag-gst{background:#1565C0}.tag-tax{background:#6A1B9A}.tag-biz{background:#2E7D32}.tag-pay{background:#E65100}.tag-aud{background:#37474F}
+.news-feat-body h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.4}
+.news-feat-body p{font-size:13px;color:var(--muted);line-height:1.75}
+.news-meta{display:flex;gap:14px;margin-top:10px;font-size:11.5px;color:var(--muted)}
+.news-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--border)}
+.news-item:last-child{border-bottom:none}
+.news-item img{width:72px;height:64px;object-fit:cover;border-radius:8px;flex-shrink:0}
+.news-item h4{font-size:13px;font-weight:700;color:var(--navy);line-height:1.4;margin-bottom:3px}
+.news-item span{font-size:11px;color:var(--muted)}
+.news-sidebar{display:flex;flex-direction:column;gap:16px}
+.sidebar-box{background:var(--offwhite);border-radius:18px;padding:20px;border:1.5px solid var(--border)}
+.sidebar-box h4{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:7px}
+.deadline-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(0,0,0,.04);font-size:12.5px}
+.deadline-row:last-child{border-bottom:none}
+.deadline-date{font-weight:700;color:var(--navy);font-size:12px}
+.badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px}
+.badge-urgent{background:#ffebee;color:#c62828}
+.badge-soon{background:#fff8e1;color:#f57f17}
+.badge-ok{background:#e8f5e9;color:#2e7d32}
+.auto-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(34,197,94,.12);color:#15803d;border:1px solid rgba(34,197,94,.25);padding:4px 12px;border-radius:20px;font-size:10.5px;font-weight:700;margin-top:8px}
+.auto-dot{width:7px;height:7px;border-radius:50%;background:#22c55e;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.sub-box{background:var(--navy);border-radius:18px;padding:20px}
+.sub-box h4{color:#fff;font-size:13px;font-weight:700;margin-bottom:6px}
+.sub-box p{color:rgba(255,255,255,.52);font-size:12px;margin-bottom:12px}
+.sub-input{width:100%;padding:9px 12px;border-radius:8px;border:none;font-size:13px;margin-bottom:8px}
+.sub-btn{width:100%;padding:9px;background:var(--gold);border:none;color:var(--navy);border-radius:8px;font-size:12.5px;font-weight:700;cursor:pointer}
+/* CTA BANNER */
+.cta-banner{background:var(--navy);padding:80px 0;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(200,169,110,.1) 0%,transparent 70%)}
+.cta-inner{position:relative;z-index:1;text-align:center;max-width:700px;margin:0 auto}
+.cta-inner h2{font-size:38px;font-weight:800;color:#fff;margin-bottom:14px;line-height:1.2}
+.cta-inner p{font-size:17px;color:rgba(255,255,255,.62);margin-bottom:32px}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+/* CONTACT */
+.contact-section{background:var(--offwhite)}
+.contact-grid{display:grid;grid-template-columns:1fr 420px;gap:2.5rem}
+.contact-form-card{background:#fff;border-radius:24px;padding:36px;box-shadow:var(--shadow)}
+.contact-form-card h3{font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:11.5px;font-weight:700;color:var(--charcoal);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:10px;font-size:14.5px;color:var(--charcoal);background:var(--offwhite);transition:border-color .2s}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--navy);background:#fff}
+.form-group textarea{min-height:110px;resize:vertical}
+.contact-sidebar{display:flex;flex-direction:column;gap:16px}
+.contact-info-card{background:#fff;border-radius:18px;padding:24px;border:1.5px solid var(--border)}
+.ci-row{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--border)}
+.ci-row:last-child{border-bottom:none;padding-bottom:0}
+.ci-icon{width:40px;height:40px;background:var(--navy);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;color:var(--gold)}
+.ci-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:3px}
+.ci-value{font-size:13.5px;color:var(--navy);font-weight:500;line-height:1.5}
+.map-cta{background:var(--navy);border-radius:12px;padding:18px;display:flex;align-items:center;gap:12px;transition:.25s}
+.map-cta:hover{background:var(--navy2);transform:translateY(-2px)}
+.map-cta span{color:#fff;font-size:13.5px;font-weight:600}
+.map-cta .map-sub{color:rgba(255,255,255,.5);font-size:11.5px;font-weight:400}
+/* FOOTER */
+footer{background:#09142A;padding:64px 0 0}
+.footer-grid{display:grid;grid-template-columns:2.2fr 1fr 1.4fr 1.4fr;gap:2.5rem;margin-bottom:48px}
+.footer-brand-row{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.footer-brand-row img{width:44px;height:44px;aspect-ratio:1/1;object-fit:contain}
+.footer-brand-name{color:#fff;font-size:15px;font-weight:800;display:block}
+.footer-brand-sub{color:var(--gold);font-size:10px;letter-spacing:.6px}
+.footer-desc{color:rgba(255,255,255,.38);font-size:13px;line-height:1.8;margin-bottom:20px;max-width:280px}
+.footer-col h5{color:#fff;font-size:12.5px;font-weight:700;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-col a{display:block;color:rgba(255,255,255,.38);font-size:12.5px;margin-bottom:9px;transition:color .2s}
+.footer-col a:hover{color:var(--gold)}
+.social-row{display:flex;gap:8px}
+.social-btn{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.38);font-size:14px;font-weight:700;transition:.2s}
+.social-btn:hover{border-color:var(--gold);color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding:20px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{color:rgba(255,255,255,.22);font-size:12px}
+.footer-bottom a{color:rgba(255,255,255,.3);font-size:12px}
+.footer-bottom a:hover{color:var(--gold)}
+/* FLOATING */
+.float-wa{position:fixed;bottom:28px;right:28px;z-index:1000;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.45);transition:transform .2s}
+.float-wa:hover{transform:scale(1.1)}
+.float-wa svg{width:28px;height:28px;fill:#fff}
+/* CHATBOT */
+.chatbot-wrap{position:fixed;bottom:28px;left:28px;z-index:1000}
+.chatbot-btn{background:var(--navy);border:2px solid var(--gold);border-radius:50px;padding:11px 20px;display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:700;color:#fff;box-shadow:0 4px 20px rgba(26,46,90,.35);transition:.25s}
+.chatbot-btn:hover{background:var(--navy2);transform:translateY(-2px)}
+.chatbot-pulse{width:10px;height:10px;border-radius:50%;background:var(--green);animation:pulse-anim 2s infinite}
+@keyframes pulse-anim{0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,.45)}50%{box-shadow:0 0 0 8px rgba(34,197,94,0)}}
+.chatbot-window{position:absolute;bottom:56px;left:0;width:370px;background:#fff;border-radius:18px;box-shadow:0 12px 48px rgba(0,0,0,.18);border:1.5px solid var(--border);overflow:hidden;display:none;flex-direction:column}
+.chatbot-window.open{display:flex}
+.chat-header{background:var(--navy);padding:14px 16px;display:flex;align-items:center;gap:11px}
+.chat-header img{width:36px;height:36px;aspect-ratio:1/1;border-radius:50%;object-fit:contain;border:2px solid var(--gold);background:rgba(200,169,110,.15)}
+.chat-header-name{color:#fff;font-size:13.5px;font-weight:700;display:block}
+.chat-header-status{color:rgba(255,255,255,.5);font-size:11px;display:flex;align-items:center;gap:4px}
+.chat-header-status::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--green);display:inline-block}
+.chat-messages{padding:14px;background:#F8F9FB;min-height:200px;max-height:320px;overflow-y:auto;display:flex;flex-direction:column;gap:8px}
+.chat-msg-bot{background:var(--navy);color:#fff;padding:9px 13px;border-radius:0 12px 12px 12px;font-size:12.5px;line-height:1.65;max-width:92%;align-self:flex-start}
+.chat-msg-bot strong{color:var(--gold);display:block;font-size:10.5px;margin-bottom:2px}
+.chat-msg-user{background:rgba(26,46,90,.09);color:var(--charcoal);padding:9px 13px;border-radius:12px 0 12px 12px;font-size:12.5px;line-height:1.65;max-width:88%;align-self:flex-end}
+.chat-quick{display:flex;flex-wrap:wrap;gap:6px;padding:10px 14px;border-top:1px solid var(--border);background:#fff}
+.chat-qr{background:rgba(26,46,90,.07);color:var(--navy);border:1px solid var(--border);border-radius:20px;padding:5px 11px;font-size:11.5px;font-weight:600;cursor:pointer;transition:.2s}
+.chat-qr:hover{background:var(--navy);color:#fff}
+.chat-input-row{display:flex;border-top:1px solid var(--border);background:#fff}
+.chat-input{flex:1;border:none;padding:11px 14px;font-size:13px;background:transparent;color:var(--charcoal)}
+.chat-send{background:var(--navy);border:none;color:var(--gold);padding:0 16px;cursor:pointer;font-size:17px}
+.chat-typing{display:flex;gap:4px;padding:8px 12px}
+.chat-typing span{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:typing .9s infinite}
+.chat-typing span:nth-child(2){animation-delay:.2s}
+.chat-typing span:nth-child(3){animation-delay:.4s}
+@keyframes typing{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-6px)}}
+/* RESPONSIVE */
+@media(max-width:1100px){.svc-grid{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:repeat(2,1fr)}.team-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr;max-width:620px;margin:0 auto}.hero-card{display:none}.hero h1{font-size:38px}.contact-grid{grid-template-columns:1fr}.news-layout{grid-template-columns:1fr}.news-sidebar{display:grid;grid-template-columns:1fr 1fr}}
+@media(max-width:768px){section{padding:56px 0}.sec-h{font-size:33px}.hero h1{font-size:30px}.hero-btns{flex-direction:column;max-width:300px}.svc-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr 1fr}.ind-grid{grid-template-columns:repeat(2,1fr)}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.07)}.stat-item:nth-child(odd){border-right:1px solid rgba(255,255,255,.07)}.testi-grid{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}nav ul{display:none}.nav-cta{display:none}.hamburger{display:flex}.form-row{grid-template-columns:1fr}.news-sidebar{grid-template-columns:1fr}.cta-inner h2{font-size:26px}.chatbot-wrap{display:none}.chatbot-window{width:300px}}
+</style>
+<style>
+.page-hero{background:var(--navy2);padding:64px 0;text-align:center;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;top:-100px;right:-80px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(200,169,110,.1) 0%,transparent 65%)}
+.page-hero h1{color:#fff;font-size:40px;font-weight:800;margin-bottom:10px;position:relative}
+.page-hero p{color:rgba(255,255,255,.6);font-size:16px;position:relative;max-width:620px;margin:0 auto}
+.page-hero .tagline{display:inline-block;margin-top:14px;background:rgba(200,169,110,.15);border:1px solid rgba(200,169,110,.3);color:var(--gold2);padding:6px 18px;border-radius:50px;font-size:12px;font-weight:700;position:relative}
+.breadcrumb{background:var(--offwhite);padding:12px 0;font-size:13px;color:var(--muted);border-bottom:1px solid var(--border)}
+.breadcrumb a{color:var(--gold)}
+.calc-tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:40px}
+.calc-tab{padding:10px 20px;border-radius:50px;font-size:13px;font-weight:600;cursor:pointer;border:1.5px solid var(--border);background:#fff;color:var(--muted);transition:.2s;font-family:inherit}
+.calc-tab:hover{border-color:var(--gold)}
+.calc-tab.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.calc-panel{display:none;max-width:760px;margin:0 auto}
+.calc-panel.active{display:block}
+.calc-card{background:#fff;border:1.5px solid var(--border);border-radius:20px;padding:36px;box-shadow:var(--shadow)}
+.calc-card h2{font-size:22px;font-weight:800;color:var(--navy);margin-bottom:6px;display:flex;align-items:center;gap:10px}
+.calc-card .sub{font-size:13.5px;color:var(--muted);margin-bottom:24px}
+.cg{margin-bottom:18px}
+.cg label{display:block;font-size:12px;font-weight:700;color:var(--charcoal);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.cg input,.cg select{width:100%;padding:13px 16px;border:1.5px solid var(--border);border-radius:10px;font-size:15px;background:var(--offwhite);transition:border-color .2s}
+.cg input:focus,.cg select:focus{border-color:var(--navy);background:#fff}
+.cg-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.calc-btn{width:100%;background:var(--navy);color:#fff;border:none;padding:14px;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;transition:.2s;margin-top:6px}
+.calc-btn:hover{background:var(--navy2)}
+.calc-result{margin-top:24px;background:var(--navy);border-radius:14px;padding:24px;display:none}
+.calc-result.show{display:block}
+.calc-result h3{color:var(--gold);font-size:12px;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
+.result-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:14px;color:rgba(255,255,255,.8)}
+.result-row:last-child{border-bottom:none}
+.result-row.total{font-size:18px;font-weight:800;color:#fff;border-top:2px solid var(--gold);margin-top:6px;padding-top:14px}
+.result-row.total span:last-child{color:var(--gold)}
+.calc-cta{margin-top:20px;text-align:center;padding:18px;background:var(--offwhite);border-radius:12px}
+.calc-cta p{font-size:13px;color:var(--muted);margin-bottom:12px}
+.calc-disclaimer{font-size:11px;color:var(--muted);margin-top:16px;text-align:center;line-height:1.6}
+.tools-intro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:44px}
+.tool-mini{background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:20px;text-align:center;cursor:pointer;transition:.2s}
+.tool-mini:hover{border-color:var(--gold);transform:translateY(-3px)}
+.tool-mini .ico{font-size:30px;display:block;margin-bottom:8px}
+.tool-mini span{font-size:12.5px;font-weight:600;color:var(--navy)}
+@media(max-width:768px){.cg-row{grid-template-columns:1fr}.tools-intro-grid{grid-template-columns:1fr 1fr}.calc-card{padding:24px}}
+</style>
+<!-- ═══ ANALYTICS & TRACKING ═══ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-XXXXXXXXXX');
+</script>
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","XXXXXXXXXX");
+</script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+<a href="https://wa.me/918686108671" class="float-wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<header id="siteHeader">
+  <div class="container">
+    <div class="nav-wrap">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo-transparent.png" alt="Loyal Professional Services Logo" width="48" height="48">
+        <div><span class="nav-logo-name">Loyal Professional Services</span><span class="nav-logo-sub">The Best Accounting Firm in Bangalore</span></div>
+      </a>
+      <nav><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="tools.html" class="active">Tools</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></nav>
+      <a href="contact.html" class="nav-cta">📅 Book Consultation</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+    <a href="industries.html">Industries</a><a href="tools.html">Tools</a><a href="news.html">News</a><a href="blog/index.html">Blog</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="container">
+    <h1>Free Finance Calculators</h1>
+    <p>Instant GST, income tax, payroll &amp; loan calculators — accurate for FY 2025-26</p>
+    <span class="tagline">⭐ Free Tools by The Best Accounting Firm in Bangalore</span>
+  </div>
+</section>
+<div class="breadcrumb"><div class="container"><a href="index.html">Home</a> / Tools &amp; Calculators</div></div>
+
+<section>
+  <div class="container">
+    <div class="tools-intro-grid fade-up">
+      <div class="tool-mini" onclick="showCalc('gst')"><span class="ico">🧾</span><span>GST Calculator</span></div>
+      <div class="tool-mini" onclick="showCalc('itax')"><span class="ico">💰</span><span>Income Tax Calculator</span></div>
+      <div class="tool-mini" onclick="showCalc('hra')"><span class="ico">🏠</span><span>HRA Exemption</span></div>
+      <div class="tool-mini" onclick="showCalc('emi')"><span class="ico">🏦</span><span>EMI Calculator</span></div>
+    </div>
+
+    <div class="calc-tabs">
+      <button class="calc-tab active" onclick="showCalc('gst',this)">GST Calculator</button>
+      <button class="calc-tab" onclick="showCalc('itax',this)">Income Tax</button>
+      <button class="calc-tab" onclick="showCalc('hra',this)">HRA Exemption</button>
+      <button class="calc-tab" onclick="showCalc('emi',this)">EMI Calculator</button>
+    </div>
+
+    <!-- GST CALCULATOR -->
+    <div class="calc-panel active" id="calc-gst">
+      <div class="calc-card">
+        <h2>🧾 GST Calculator</h2>
+        <p class="sub">Calculate GST amount — add or remove GST from any value.</p>
+        <div class="cg"><label>Amount (₹)</label><input type="number" id="gstAmount" placeholder="Enter amount" value="10000"></div>
+        <div class="cg-row">
+          <div class="cg"><label>GST Rate</label>
+            <select id="gstRate"><option value="5">5%</option><option value="12">12%</option><option value="18" selected>18%</option><option value="28">28%</option></select>
+          </div>
+          <div class="cg"><label>Calculation Type</label>
+            <select id="gstType"><option value="add">Add GST (exclusive)</option><option value="remove">Remove GST (inclusive)</option></select>
+          </div>
+        </div>
+        <button class="calc-btn" onclick="calcGST()">Calculate GST</button>
+        <div class="calc-result" id="gstResult">
+          <h3>GST Breakdown</h3>
+          <div class="result-row"><span>Base Amount</span><span id="gstBase">₹0</span></div>
+          <div class="result-row"><span>CGST (half)</span><span id="gstCgst">₹0</span></div>
+          <div class="result-row"><span>SGST (half)</span><span id="gstSgst">₹0</span></div>
+          <div class="result-row"><span>Total GST</span><span id="gstTotal">₹0</span></div>
+          <div class="result-row total"><span>Final Amount</span><span id="gstFinal">₹0</span></div>
+        </div>
+        <div class="calc-cta">
+          <p>Need help with GST filing or registration?</p>
+          <a href="contact.html" class="btn btn-navy btn-sm" style="padding:10px 22px;font-size:13px">Talk to a GST Expert →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- INCOME TAX CALCULATOR -->
+    <div class="calc-panel" id="calc-itax">
+      <div class="calc-card">
+        <h2>💰 Income Tax Calculator</h2>
+        <p class="sub">Estimate your income tax for FY 2025-26 under the New Tax Regime.</p>
+        <div class="cg"><label>Annual Income (₹)</label><input type="number" id="itaxIncome" placeholder="Enter annual income" value="1200000"></div>
+        <div class="cg"><label>Age Group</label>
+          <select id="itaxAge"><option value="below60">Below 60</option><option value="60to80">60 to 80</option><option value="above80">Above 80</option></select>
+        </div>
+        <button class="calc-btn" onclick="calcITax()">Calculate Tax</button>
+        <div class="calc-result" id="itaxResult">
+          <h3>Tax Estimate — New Regime FY 2025-26</h3>
+          <div class="result-row"><span>Gross Income</span><span id="itaxGross">₹0</span></div>
+          <div class="result-row"><span>Standard Deduction</span><span id="itaxStd">₹75,000</span></div>
+          <div class="result-row"><span>Taxable Income</span><span id="itaxTaxable">₹0</span></div>
+          <div class="result-row"><span>Income Tax</span><span id="itaxTax">₹0</span></div>
+          <div class="result-row"><span>Health &amp; Education Cess (4%)</span><span id="itaxCess">₹0</span></div>
+          <div class="result-row total"><span>Total Tax Payable</span><span id="itaxFinal">₹0</span></div>
+        </div>
+        <div class="calc-cta">
+          <p>Want to legally reduce your tax? Old regime may save you more.</p>
+          <a href="contact.html" class="btn btn-navy btn-sm" style="padding:10px 22px;font-size:13px">Get a Free Tax Review →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HRA CALCULATOR -->
+    <div class="calc-panel" id="calc-hra">
+      <div class="calc-card">
+        <h2>🏠 HRA Exemption Calculator</h2>
+        <p class="sub">Calculate your House Rent Allowance exemption under the Old Tax Regime.</p>
+        <div class="cg-row">
+          <div class="cg"><label>Basic Salary /yr (₹)</label><input type="number" id="hraBasic" placeholder="Annual basic" value="600000"></div>
+          <div class="cg"><label>HRA Received /yr (₹)</label><input type="number" id="hraReceived" placeholder="Annual HRA" value="240000"></div>
+        </div>
+        <div class="cg-row">
+          <div class="cg"><label>Rent Paid /yr (₹)</label><input type="number" id="hraRent" placeholder="Annual rent" value="240000"></div>
+          <div class="cg"><label>City Type</label>
+            <select id="hraCity"><option value="metro">Metro (50%)</option><option value="nonmetro">Non-Metro (40%)</option></select>
+          </div>
+        </div>
+        <button class="calc-btn" onclick="calcHRA()">Calculate HRA Exemption</button>
+        <div class="calc-result" id="hraResult">
+          <h3>HRA Exemption — Least of Three</h3>
+          <div class="result-row"><span>Actual HRA Received</span><span id="hraR1">₹0</span></div>
+          <div class="result-row"><span>Rent Paid − 10% of Basic</span><span id="hraR2">₹0</span></div>
+          <div class="result-row"><span>50%/40% of Basic Salary</span><span id="hraR3">₹0</span></div>
+          <div class="result-row total"><span>HRA Exemption</span><span id="hraExempt">₹0</span></div>
+        </div>
+        <div class="calc-cta">
+          <p>Confused about old vs new regime? We'll find what saves you most.</p>
+          <a href="contact.html" class="btn btn-navy btn-sm" style="padding:10px 22px;font-size:13px">Ask a Tax Expert →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- EMI CALCULATOR -->
+    <div class="calc-panel" id="calc-emi">
+      <div class="calc-card">
+        <h2>🏦 EMI Calculator</h2>
+        <p class="sub">Calculate monthly EMI for a business or personal loan.</p>
+        <div class="cg"><label>Loan Amount (₹)</label><input type="number" id="emiAmount" placeholder="Loan amount" value="1000000"></div>
+        <div class="cg-row">
+          <div class="cg"><label>Interest Rate (% p.a.)</label><input type="number" id="emiRate" placeholder="Interest rate" value="10" step="0.1"></div>
+          <div class="cg"><label>Tenure (years)</label><input type="number" id="emiYears" placeholder="Years" value="5"></div>
+        </div>
+        <button class="calc-btn" onclick="calcEMI()">Calculate EMI</button>
+        <div class="calc-result" id="emiResult">
+          <h3>Loan EMI Breakdown</h3>
+          <div class="result-row"><span>Loan Amount</span><span id="emiPrincipal">₹0</span></div>
+          <div class="result-row"><span>Total Interest</span><span id="emiInterest">₹0</span></div>
+          <div class="result-row"><span>Total Payable</span><span id="emiTotal">₹0</span></div>
+          <div class="result-row total"><span>Monthly EMI</span><span id="emiMonthly">₹0</span></div>
+        </div>
+        <div class="calc-cta">
+          <p>Need a CMA report or project report for your loan?</p>
+          <a href="contact.html" class="btn btn-navy btn-sm" style="padding:10px 22px;font-size:13px">Get Loan Documentation →</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="calc-disclaimer">⚠️ These calculators provide estimates for general guidance only and should not be treated as professional tax advice. Tax rules change frequently. For accurate, personalized calculations, please consult LPS — the best accounting firm in Bangalore. Call +91 8686108671.</p>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-inner fade-up">
+      <h2>Want Exact Numbers, Not Estimates?</h2>
+      <p>Our experts give you precise calculations and a personalized tax-saving plan.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-gold">📅 Book Free Consultation</a>
+        <a href="https://wa.me/918686108671" class="btn btn-wa" target="_blank">💬 WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-row">
+          <img src="images/logo-footer-transparent.png" alt="Loyal Professional Services" width="44" height="44">
+          <div><span class="footer-brand-name">Loyal Professional Services</span><span class="footer-brand-sub">The Best Accounting Firm in Bangalore</span></div>
+        </div>
+        <p class="footer-desc">Top-rated accounting firm in Bangalore providing GST filing, income tax, payroll, audit and financial advisory. 10+ years of expertise, 500+ happy clients.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/loyalprofessionalservices/" target="_blank" rel="noopener" class="social-btn" title="Facebook">f</a>
+          <a href="#" class="social-btn" title="LinkedIn">in</a>
+          <a href="#" class="social-btn" title="Instagram">ig</a>
+          <a href="https://wa.me/918686108671" target="_blank" rel="noopener" class="social-btn" title="WhatsApp">wa</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a>
+        <a href="industries.html">Industries</a><a href="news.html">News</a><a href="faq.html">FAQs</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Our Services</h5>
+        <a href="services.html#gst">GST Services</a><a href="services.html#incometax">Income Tax</a>
+        <a href="services.html#accounting">Accounting</a><a href="services.html#payroll">Payroll</a>
+        <a href="services.html#audit">Audit & Assurance</a><a href="services.html#advisory">Financial Advisory</a>
+        <a href="services.html#startup">Startup Consulting</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <a href="tel:+918686108671">📞 +91 8686108671</a>
+        <a href="mailto:loyalprofessionalservices@gmail.com">✉️ loyalprofessionalservices@gmail.com</a>
+        <a href="https://maps.app.goo.gl/cUDkmKyXso2UCXwP9" target="_blank" rel="noopener">📍 No.27 Batra Centre, Ulsoor Rd, Bengaluru 560042</a>
+        <a>🕐 Mon–Sat: 9 AM – 6 PM</a>
+        <a>🪪 GSTIN: 29DNSPK0951G1ZL</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Loyal Professional Services. All Rights Reserved. Bangalore, Karnataka, India.</p>
+      <div style="display:flex;gap:16px"><a href="contact.html">Privacy Policy</a><a href="contact.html">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+<script>
+document.getElementById('hamburger').addEventListener('click',function(){
+  this.classList.toggle('open');document.getElementById('mobileMenu').classList.toggle('open');
+});
+window.addEventListener('scroll',()=>{
+  const h=document.getElementById('siteHeader');if(h)h.classList.toggle('scrolled',window.scrollY>20);
+},{passive:true});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.1});
+document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+
+const fmt=n=>'₹'+Math.round(n).toLocaleString('en-IN');
+
+function showCalc(id,btn){
+  document.querySelectorAll('.calc-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('calc-'+id).classList.add('active');
+  document.querySelectorAll('.calc-tab').forEach(t=>t.classList.remove('active'));
+  if(btn&&btn.classList.contains('calc-tab'))btn.classList.add('active');
+  else{
+    document.querySelectorAll('.calc-tab').forEach(t=>{
+      if(t.textContent.toLowerCase().includes(id==='itax'?'income':id))t.classList.add('active');
+    });
+  }
+  window.scrollTo({top:document.querySelector('.calc-tabs').offsetTop-90,behavior:'smooth'});
+}
+
+function calcGST(){
+  const amt=parseFloat(document.getElementById('gstAmount').value)||0;
+  const rate=parseFloat(document.getElementById('gstRate').value);
+  const type=document.getElementById('gstType').value;
+  let base,gst,final;
+  if(type==='add'){base=amt;gst=amt*rate/100;final=amt+gst;}
+  else{base=amt/(1+rate/100);gst=amt-base;final=amt;}
+  document.getElementById('gstBase').textContent=fmt(base);
+  document.getElementById('gstCgst').textContent=fmt(gst/2);
+  document.getElementById('gstSgst').textContent=fmt(gst/2);
+  document.getElementById('gstTotal').textContent=fmt(gst);
+  document.getElementById('gstFinal').textContent=fmt(final);
+  document.getElementById('gstResult').classList.add('show');
+}
+
+function calcITax(){
+  const income=parseFloat(document.getElementById('itaxIncome').value)||0;
+  const std=75000;
+  const taxable=Math.max(0,income-std);
+  // New Regime FY 2025-26 slabs
+  let tax=0;
+  const slabs=[[300000,0],[700000,.05],[1000000,.10],[1200000,.15],[1500000,.20],[Infinity,.30]];
+  let prev=0;
+  for(const[limit,rate]of slabs){
+    if(taxable>prev){
+      tax+=(Math.min(taxable,limit)-prev)*rate;
+      prev=limit;
+    }else break;
+  }
+  // 87A rebate — income up to 7L tax-free
+  if(taxable<=700000)tax=0;
+  const cess=tax*.04;
+  document.getElementById('itaxGross').textContent=fmt(income);
+  document.getElementById('itaxTaxable').textContent=fmt(taxable);
+  document.getElementById('itaxTax').textContent=fmt(tax);
+  document.getElementById('itaxCess').textContent=fmt(cess);
+  document.getElementById('itaxFinal').textContent=fmt(tax+cess);
+  document.getElementById('itaxResult').classList.add('show');
+}
+
+function calcHRA(){
+  const basic=parseFloat(document.getElementById('hraBasic').value)||0;
+  const received=parseFloat(document.getElementById('hraReceived').value)||0;
+  const rent=parseFloat(document.getElementById('hraRent').value)||0;
+  const city=document.getElementById('hraCity').value;
+  const r1=received;
+  const r2=Math.max(0,rent-0.1*basic);
+  const r3=basic*(city==='metro'?.5:.4);
+  const exempt=Math.min(r1,r2,r3);
+  document.getElementById('hraR1').textContent=fmt(r1);
+  document.getElementById('hraR2').textContent=fmt(r2);
+  document.getElementById('hraR3').textContent=fmt(r3);
+  document.getElementById('hraExempt').textContent=fmt(exempt);
+  document.getElementById('hraResult').classList.add('show');
+}
+
+function calcEMI(){
+  const p=parseFloat(document.getElementById('emiAmount').value)||0;
+  const r=(parseFloat(document.getElementById('emiRate').value)||0)/12/100;
+  const n=(parseFloat(document.getElementById('emiYears').value)||0)*12;
+  let emi=r>0?p*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1):p/n;
+  const total=emi*n;
+  document.getElementById('emiPrincipal').textContent=fmt(p);
+  document.getElementById('emiInterest').textContent=fmt(total-p);
+  document.getElementById('emiTotal').textContent=fmt(total);
+  document.getElementById('emiMonthly').textContent=fmt(emi);
+  document.getElementById('emiResult').classList.add('show');
+}
+// Auto-calc on load
+calcGST();calcITax();calcHRA();calcEMI();
+</script>
+<script>
+document.addEventListener('click',function(e){
+  const a=e.target.closest('a');
+  if(!a)return;
+  if(a.href&&a.href.includes('wa.me')){if(typeof gtag==='function')gtag('event','whatsapp_click',{event_category:'engagement'});}
+  if(a.href&&a.href.startsWith('tel:')){if(typeof gtag==='function')gtag('event','phone_click',{event_category:'engagement'});}
+});
+</script>
+<script>
+if(window.netlifyIdentity){
+  window.netlifyIdentity.on('init',function(user){
+    if(!user){
+      window.netlifyIdentity.on('login',function(){document.location.href='/admin/';});
+    }
+  });
+}
+</script>
+</body>
+</html>
