@@ -1,0 +1,141 @@
+# ══════════════════════════════════════════════════════════
+#  LPS ADMIN CMS CONFIGURATION
+#  Defines everything you can edit from the dashboard.
+#  Edits commit to your site's Git repo and auto-deploy on Netlify.
+# ══════════════════════════════════════════════════════════
+
+backend:
+  name: git-gateway          # Uses Netlify Identity + Git Gateway (no separate server)
+  branch: main               # IMPORTANT: change to your repo's default branch if different
+
+# Where uploaded images are stored and served from
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Friendly site link in the top corner of the dashboard
+site_url: https://loyalprofessionalservices.com
+display_url: https://loyalprofessionalservices.com
+logo_url: https://loyalprofessionalservices.com/images/logo-transparent.png
+
+# Editorial workflow = draft → review → publish (gives you "scheduled/unpublished" control)
+publish_mode: editorial_workflow
+
+collections:
+  # ─────────────────────────────────────────────
+  #  BLOG POSTS  (create / edit / delete / categories / tags / SEO / featured image)
+  # ─────────────────────────────────────────────
+  - name: "blog"
+    label: "📝 Blog Posts"
+    folder: "_posts"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ['date', 'title']
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Category", name: "category", widget: "select", options: ["GST", "Income Tax", "Payroll", "Audit", "Tax Planning", "Compliance", "Startup", "General"] }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Short Summary", name: "summary", widget: "text", hint: "1–2 sentences shown in listings and search results" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "SEO Settings"
+        name: "seo"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Meta Title (≤60 chars)", name: "meta_title", widget: "string", required: false }
+          - { label: "Meta Description (≤160 chars)", name: "meta_description", widget: "text", required: false }
+          - { label: "URL Slug", name: "slug", widget: "string", required: false, hint: "Leave blank to auto-generate from title" }
+
+  # ─────────────────────────────────────────────
+  #  TEAM MEMBERS
+  # ─────────────────────────────────────────────
+  - name: "team"
+    label: "👥 Team Members"
+    folder: "_data/team"
+    create: true
+    delete: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role / Title", name: "role", widget: "string", hint: "e.g. Founder, Audit & Taxation Expert" }
+      - { label: "Experience", name: "experience", widget: "string", hint: "e.g. 10+ Years Experience" }
+      - { label: "Photo", name: "photo", widget: "image" }
+      - { label: "Short Bio", name: "bio", widget: "text" }
+      - { label: "Display Order", name: "order", widget: "number", default: 1 }
+
+  # ─────────────────────────────────────────────
+  #  FAQs
+  # ─────────────────────────────────────────────
+  - name: "faqs"
+    label: "❓ FAQs"
+    folder: "_data/faqs"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Question", name: "question", widget: "string" }
+      - { label: "Answer", name: "answer", widget: "text" }
+      - { label: "Category", name: "category", widget: "select", options: ["GST", "Income Tax", "TDS", "Payroll", "Business & Startup", "Audit", "Accounting", "General"] }
+
+  # ─────────────────────────────────────────────
+  #  TESTIMONIALS
+  # ─────────────────────────────────────────────
+  - name: "testimonials"
+    label: "⭐ Testimonials"
+    folder: "_data/testimonials"
+    create: true
+    delete: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Client Name", name: "name", widget: "string" }
+      - { label: "Company / Role", name: "company", widget: "string" }
+      - { label: "Testimonial Text", name: "text", widget: "text" }
+      - { label: "Star Rating", name: "rating", widget: "number", default: 5, min: 1, max: 5 }
+
+  # ─────────────────────────────────────────────
+  #  SITE-WIDE SETTINGS (contact details, footer, CTAs, SEO)
+  # ─────────────────────────────────────────────
+  - name: "settings"
+    label: "⚙️ Site Settings"
+    files:
+      - label: "📞 Contact Details"
+        name: "contact"
+        file: "_data/contact.json"
+        fields:
+          - { label: "Phone Number", name: "phone", widget: "string", default: "+91 8686108671" }
+          - { label: "Email", name: "email", widget: "string", default: "loyalprofessionalservices@gmail.com" }
+          - { label: "WhatsApp Number (digits only, with country code)", name: "whatsapp", widget: "string", default: "918686108671" }
+          - { label: "Office Address", name: "address", widget: "text" }
+          - { label: "Working Hours", name: "hours", widget: "string", default: "Mon–Sat: 9:00 AM – 6:00 PM" }
+          - { label: "GSTIN", name: "gstin", widget: "string", default: "29DNSPK0951G1ZL" }
+          - { label: "Google Maps Link", name: "maps", widget: "string", required: false }
+          - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+
+      - label: "🏠 Homepage Content"
+        name: "homepage"
+        file: "_data/homepage.json"
+        fields:
+          - { label: "Hero Headline", name: "hero_heading", widget: "string", default: "Expert Accounting & Tax Services in Bangalore" }
+          - { label: "Hero Subtext", name: "hero_sub", widget: "text" }
+          - { label: "Primary CTA Button Text", name: "cta_primary", widget: "string", default: "Book Free Consultation" }
+          - { label: "Stat 1 — Clients", name: "stat_clients", widget: "string", default: "500+" }
+          - { label: "Stat 2 — Years", name: "stat_years", widget: "string", default: "10+" }
+          - { label: "Stat 3 — ITR Filed", name: "stat_itr", widget: "string", default: "5,000+" }
+
+      - label: "🔍 SEO Metadata (Homepage)"
+        name: "seo"
+        file: "_data/seo.json"
+        fields:
+          - { label: "Meta Title (≤60 chars)", name: "title", widget: "string" }
+          - { label: "Meta Description (≤160 chars)", name: "description", widget: "text" }
+          - { label: "Keywords", name: "keywords", widget: "text", required: false }
+
+      - label: "🦶 Footer Content"
+        name: "footer"
+        file: "_data/footer.json"
+        fields:
+          - { label: "Footer Description", name: "description", widget: "text" }
+          - { label: "Copyright Text", name: "copyright", widget: "string", default: "© 2025 Loyal Professional Services. All Rights Reserved." }
